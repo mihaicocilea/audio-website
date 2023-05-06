@@ -1,0 +1,110 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #c93a0f;
+}
+.navbar a{
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.checkHistory{
+    background-color: transparent;
+    border: 2px solid white;
+    text-align: center;
+    font-weight: 700 !important;
+}
+p{
+    font-size: 18px;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("../images/banner.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+.intro h1{
+    font-size: 54px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    opacity: 1;
+}
+
+.intro button{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    padding: 8px 38px;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    margin-top: 18px;
+
+}
+.size{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+@media (max-width: 992px)
+{
+    .mobile{
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+    .mobile-center{
+        text-align: center !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile .card{
+        margin-top: 18px;
+    }
+    .img-mobile{
+        height: 100px;
+    }
+    .mobile .card {
+        width: 25rem !important;
+    }
+    .brand-mobile{
+        width: 50%;
+    }
+}
+@media (max-width: 425px)
+{
+    .intro h1{
+        font-size: 46px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .img-mobile{
+        height: 50px;
+    }
+    .mobile .card {
+        width: 18rem !important;
+    }
+    .size{
+        font-size: 1em;
+    }
+    .mobile-logo-margin{
+        margin: 0 1rem !important;
+    }
+   
+}
